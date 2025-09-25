@@ -14,7 +14,7 @@ Se selecciono el patrón _builder_ ya que este permite la creación de objectos 
 
 ### Diagrama de clases
 
-![Ejercicio 1](ejercicio%201.png)
+![Ejercicio 1](ejercicio_1/ejercicio%201.png)
 
 ### Ejecutar
 
