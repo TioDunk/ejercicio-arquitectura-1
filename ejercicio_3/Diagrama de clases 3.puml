@@ -1,0 +1,33 @@
+@startuml
+title Diagrama de clases - Patrón Mediator (Chat grupal)
+
+interface ChatMediator {
+    +sendMessage(message: String, user: User)
+    +addUser(user: User)
+}
+
+class ChatRoom {
+    -users: List<User>
+    +sendMessage(message: String, user: User)
+    +addUser(user: User)
+}
+
+abstract class User {
+    #mediator: ChatMediator
+    #name: String
+    +send(message: String)
+    +receive(message: String, senderName: String)
+    +getName(): String
+}
+
+class ConcreteUser {
+    +send(message: String)
+    +receive(message: String, senderName: String)
+}
+
+' Relaciones principales
+ChatMediator <|.. ChatRoom
+User <|-- ConcreteUser
+ChatRoom "1" *-- "many" User
+User --> ChatMediator : usa
+@enduml
