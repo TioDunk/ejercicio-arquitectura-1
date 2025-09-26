@@ -56,11 +56,11 @@ _Comportamiento_
 
 _Mediator_
 
-Se selecciono el patrón _builder_ ya que este permite la creación de objectos complejos al mismo tiempo que separa la lógica de creación del objeto a crear.
+Se seleccionó el patrón _Mediator_ ya que este permite centralizar la comunicación entre objetos, evitando que cada objeto tenga que conocer directamente a todos los demás. Esto reduce las dependencias y facilita el mantenimiento del sistema.
 
 ### Diagrama de clases
 
-![Ejercicio 3](ejercicio%203.png)
+![Ejercicio 3](ejercicio_3/Diagrama%20de%20clases%20-%20Escenario%201.png)
 
 ### Ejecutar
 
