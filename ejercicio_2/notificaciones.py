@@ -4,10 +4,10 @@
 #solo creo las clases de notificación y las clases de plataforma y en test_escenario2.py las combino como quiera evitando
 #la multiplicación de clases concretas
 
-from .plataformas import PlataformaNotificadora
+from plataformas import PlataformaNotificadora
 from abc import ABC, abstractmethod
 
-class Notificacion:
+class Notificacion(ABC):
     def __init__(self, plataforma: PlataformaNotificadora, mensaje: str) -> None:
         self._plataforma = plataforma
         self._mensaje = mensaje

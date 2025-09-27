@@ -33,11 +33,11 @@ _Estructural_
 
 _Bridge_
 
-Poner la razón en esta parte.
+Se seleccionó el patrón Bridge porque permite separar la abstracción (las notificaciones) de su implementación (las plataformas). De esta manera se evita la explosión de clases al no tener que crear una clase distinta por cada combinación de tipo de notificación y plataforma.
 
 ### Diagrama de clases
 
-![Ejercicio 2](ejercicio%202.png)
+![Ejercicio 1](ejercicio_2/ejercicio_2.png)
 
 ### Ejecutar
 

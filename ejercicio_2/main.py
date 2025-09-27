@@ -1,5 +1,5 @@
-from src.escenarios2_patron_bridge.plataformas import PlataformaEmail, PlataformaMovil, PlataformaWeb
-from src.escenarios2_patron_bridge.notificaciones import NotificacionAlerta, NotificacionMensaje
+from plataformas import PlataformaEmail, PlataformaMovil, PlataformaWeb
+from notificaciones import NotificacionAlerta, NotificacionMensaje
 
 if __name__ == "__main__":
 
@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     #Hacemos una prueba de un mensaje en la plataforma web
     notificacion_mensaje = NotificacionMensaje(
-        plataforma_web, 
+        plataforma_web,
         "Recuerda reportar tus horas de trabajo antes del cierre de Q."
     )
 
