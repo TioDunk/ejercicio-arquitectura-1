@@ -60,7 +60,7 @@ Se seleccionó el patrón _Mediator_ ya que este permite centralizar la comunica
 
 ### Diagrama de clases
 
-![Ejercicio 3](ejercicio_3/Diagrama%20de%20clases%20-%20Escenario%201.png)
+![Ejercicio 3](ejercicio_3/Diagrama%20de%20clases%20-%20Escenario%203.png)
 
 ### Ejecutar
 
