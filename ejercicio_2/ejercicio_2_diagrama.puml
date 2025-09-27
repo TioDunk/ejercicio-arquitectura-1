@@ -1,0 +1,36 @@
+@startuml
+interface PlataformaNotificadora {
+  +dibujar(tipo: String, mensaje: String): void
+}
+
+class PlataformaWeb implements PlataformaNotificadora
+class PlataformaMovil implements PlataformaNotificadora
+class PlataformaEscritorio implements PlataformaNotificadora
+class PlataformaEmail implements PlataformaNotificadora
+
+abstract class Notificacion {
+  -_plataforma: PlataformaNotificadora
+  -_mensaje: String
+  +Notificacion(plataforma: PlataformaNotificadora, mensaje: String)
+  +set_plataforma(plataforma: PlataformaNotificadora): void
+  {abstract} +mostrar(): void
+}
+
+class NotificacionMensaje extends Notificacion {
+  +mostrar(): void
+}
+
+class NotificacionAlerta extends Notificacion {
+  +mostrar(): void
+}
+
+class NotificacionConfirmacion extends Notificacion {
+  +mostrar(): void
+}
+
+class NotificacionError extends Notificacion {
+  +mostrar(): void
+}
+
+Notificacion o-- PlataformaNotificadora : bridge
+@enduml
