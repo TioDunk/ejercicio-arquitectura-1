@@ -28,6 +28,6 @@ class ConcreteUser {
 ' Relaciones principales
 ChatMediator <|.. ChatRoom
 User <|-- ConcreteUser
-ChatRoom "1" *-- "many" User
+ChatRoom "1" o-- "*" User
 User --> ChatMediator : usa
 @enduml
